@@ -1,0 +1,27 @@
+        </main>
+        <footer>
+            <div>
+                <p>&copy; 2017, Dominik Chlouba</p>
+                <p>Používáme webové sušenky.</p>
+            </div>
+            <div>
+                <p>Verze <%= versionName %></p>
+                <p>Build <%= buildNumber %></p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/transition.js"></script>
+        <script type="text/javascript" src="js/default.js"></script>
+        <script type="text/javascript" src="js/instafeed.js"></script>
+        <script type="text/javascript">
+            var feed = new Instafeed({
+                get: 'user',
+                userId: '351744574',
+                clientId: 'b0e016de62fe4871b7cc7cf6150e195b',
+                accessToken: '351744574.1677ed0.d0507bbb22424a4cbc57204c2771ddb3',
+                limit: 6,
+                resolution: 'thumbnail'
+            });
+            feed.run();
+        </script>
+    </body>
+</html>

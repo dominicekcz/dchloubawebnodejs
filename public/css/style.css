@@ -1,0 +1,1113 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+div#details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+div#details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: "WEK";
+    src: url(../fonts/WestEndKnights.otf)
+}
+
+@font-face {
+    font-family: "GFSB";
+    src: url(../fonts/GFSBodoni.otf)
+}
+
+body {
+    background-image: url(http://wallpapercave.com/wp/hc11meW.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+a{
+    text-decoration: none;
+    font-family: "GFSB", sans-serif
+}
+
+header {
+    width: 100%;
+    height: 80vh;
+    background: rgba(63, 113, 174, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid rgba(255, 255, 255, .15)
+}
+
+header h1,
+header h2 {
+    color: white;
+    font-family: "WEK", sans-serif;
+    padding: 10px
+}
+
+header h1 {
+    font-size: 27.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white
+}
+
+header h2 {
+    font-size: 25px
+}
+
+nav {
+    position: fixed;
+    bottom: -52px;
+    left: 0;
+    height: 103px;
+    width: 100%;
+    text-align: left;
+    background-image: url(http://wallpapercave.com/wp/hc11meW.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    z-index: 100;
+    opacity: .95
+}
+
+nav div#navLayer {
+    background: rgba(63, 113, 174, 0.55);
+    width: 100%;
+    height: 51px;
+    position: fixed
+}
+
+nav div#menuToggle, nav div#backButton, nav div#searchBox {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    padding: 12.5px;
+    transition: .25s background, .25s border;
+    cursor: pointer;
+    border-bottom: 1px solid transparent
+}
+
+nav div.navLeftBtns{
+    display: inline-block
+}
+
+nav div#menuToggle{
+    left: -53px
+}
+
+nav div#backButton{
+    left: -53px
+}
+
+nav div#searchBox{
+    background: red;
+    position: absolute;
+    height: 50px;
+    width: 350px;
+    top: 0;
+    left: 50px;
+    padding: 0;
+    display: none
+}
+
+nav div#menuToggle:hover, nav div#backButton:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.45)
+}
+
+nav div#menuToggle:hover, menu div.menuLeftArrow:hover, menu div.menuRightArrow:hover, menu ul li:hover, nav div#backButton:hover {
+    background-color: rgba(255, 255, 255, .15)
+}
+
+menu {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 100;
+    overflow: hidden
+}
+
+menu div#menuLayer {
+    background: rgba(63, 113, 174, 0.55);
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+menu div.menuLeftArrow, menu div.menuRightArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .25s background;
+    border-top: 1px solid transparent
+}
+
+menu div.menuLeftArrow img, menu div.menuRightArrow img{
+    width: 20px;
+    height: 20px
+}
+
+menu div.menuRightArrow img{
+    transform: rotateZ(180deg)
+}
+
+menu div.menuLeftArrow{
+    width: 50px;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+menu div.menuRightArrow{
+    width: 50px;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    right: 0
+}
+
+menu ul{
+    width: calc(100% - 100px);
+    max-height: 50px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: left;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap
+}
+
+menu ul li{
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    /*margin-left: -6px;*/
+    color: rgba(255, 255, 255, 0.8);
+    transition: .25s background, .25s border;
+    border-top: 1px solid transparent
+}
+
+menu ul li:hover{
+    border-top: 1px solid rgba(255, 255, 255, 0.45)
+}
+
+menu ul li img{
+    width: 20px;
+    height: 20px;
+    margin: 15px
+}
+
+menu ul li p{
+    position: absolute;
+    margin: -35px 0 0 50px
+}
+
+main {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.95)
+}
+
+section div#separatorLine {
+    width: 10%;
+    height: 1px;
+    background-color: darkgray;
+    margin: 40px auto 0;
+}
+
+section {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative
+}
+
+section h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "GFSB", sans-serif;
+    z-index: 1;
+    position: relative;
+    line-height: 1.5em
+}
+
+section h1 span {
+    color: #2762b2
+}
+
+section h2 {
+    font-family: "GFSB", sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+    line-height: 1.5em
+}
+
+section h3 {
+    font-family: "GFSB", sans-serif;
+    font-style: italic;
+    margin-top: 40px;
+    z-index: 1;
+    position: relative;
+    line-height: 1.5em
+}
+
+section p {
+    font-family: "GFSB", sans-serif;
+    margin: 40px 0 0 0;
+    line-height: 1.5em
+}
+
+section button {
+    border: 2px solid rgba(56, 131, 234, 0.5);
+    background: none;
+    padding: 15px;
+    cursor: pointer;
+    color: rgba(56, 131, 234, 0.75);
+    font-family: "GFSB", sans-serif;
+    transition: .5s color, .5s background
+}
+
+section button:hover {
+    background-color: #3883ea;
+    color: white
+}
+
+article button {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: none;
+    padding: 15px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "GFSB", sans-serif;
+    transition: .5s color, .5s background
+}
+
+article button:hover {
+    background-color: #ffffff;
+    color: black
+}
+
+div.msgBlock {
+    margin: 20px 10px;
+    padding: 25px;
+    width: calc(100% - 70px);
+}
+
+div.msgBlock p {
+    margin: 20px 0
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 70px;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8
+}
+
+form input[type="text"],
+form input[type="password"] {
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    background: none;
+    font-family: "GFSB", sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 40px);
+    color: black;
+    transition: .5s border
+}
+
+form textarea {
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    background: none;
+    font-family: "GFSB", sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 40px);
+    color: black;
+    min-height: 100px;
+    transition: .5s border
+}
+
+form input[type="submit"] {
+    border: 2px solid rgba(56, 131, 234, 0.5);
+    background: none;
+    padding: 15px;
+    cursor: pointer;
+    color: rgba(56, 131, 234, 0.75);
+    font-family: "GFSB", sans-serif;
+    transition: .5s color, .5s background, .5s border;
+    width: calc(100% - 16px);
+    font-size: 17.5px;
+    margin: 10px 0
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border: 2px solid #3883ea
+}
+
+form textarea:focus {
+    border: 2px solid #3883ea
+}
+
+form input[type="submit"]:hover {
+    background-color: #3883ea;
+    color: white
+}
+
+div#personalInfo {
+    margin: 40px auto;
+}
+
+div#personalInfo img.personalImg {
+    width: 300px;
+    height: 300px
+}
+
+div#personalInfo div#details {
+    margin: 40px auto;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: "GFSB", sans-serif
+}
+
+div#personalInfo div#details p {
+    margin: 10px 0
+}
+
+div#personalInfo div#details p.personalName {
+    text-transform: uppercase;
+    font-size: 20px
+}
+
+div#personalInfo div#details p.personalName span {
+    color: #2762b2
+}
+
+section a {
+    color: black;
+    text-decoration: none;
+    font-family: "GFSB", sans-serif;
+    text-transform: uppercase
+}
+
+img.knowledgeLogos {
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    margin: 30px 20px
+}
+
+div#eduContainer {
+    display: inline-block;
+    padding: 20px;
+    font-family: "GFSB", sans-serif;
+    margin: 40px 20px;
+    color: #363636;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8
+}
+
+div#eduContainer div.eduTimeAndName {
+    text-align: right;
+}
+
+div#eduContainer div.eduTimeAndName div.eduTime {
+    display: inline-block;
+    text-align: left;
+    padding: 20px
+}
+
+div#eduContainer div.eduTimeAndName div.eduTime:nth-child(2) {
+    background: #363636;
+    width: 20px;
+    height: 1px;
+    padding: 0;
+    margin-bottom: 7.5px
+}
+
+div#eduContainer div.eduTimeAndName div.eduTime:nth-child(3) {
+    color: #2762b2
+}
+
+div#eduContainer div.eduTimeAndName div.eduTime p {
+    padding: 5px;
+    margin: 0
+}
+
+div#eduContainer div.eduTimeAndName div.eduTime p:nth-child(2) {
+    font-size: 25px
+}
+
+div#eduContainer div.eduTimeAndName p:nth-child(5) {
+    color: #2762b2;
+    text-transform: uppercase;
+    font-size: 17.5px
+}
+
+div#eduContainer div.eduTimeAndName div#eduShortSepLine {
+    width: 60%;
+    height: 1px;
+    background: #a8a8a8;
+    margin: 10px auto
+}
+
+div#eduContainer div.eduTimeAndName p {
+    padding: 5px;
+    text-align: center;
+    margin: 0
+}
+
+div#instafeed {
+    margin: 40px 0;
+    position: relative;
+    z-index: 1
+}
+
+div#contactOpts {
+    display: inline-flex;
+    margin: 40px
+}
+
+div#contactOpts img {
+    width: 20px
+}
+
+div#contactOpts p {
+    padding: 2.5px 0 0 10px;
+    margin: 0;
+    font-family: "GFSB", sans-serif;
+    text-decoration: none
+}
+
+div#longSepLine {
+    width: 40%;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin: 0 auto 0px auto
+}
+
+section svg {
+    width: 5vw;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    fill: transparent;
+    stroke: rgba(34, 85, 181, 0.6);
+    stroke-width: 2;
+    stroke-miterlimit: 5;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 0;
+    -webkit-animation: atiAnim 1s linear forwards, fillAnim 3s infinite alternate;
+    -moz-animation: atiAnim 1s linear forwards, fillAnim 3s infinite alternate;
+    -o-animation: atiAnim 1s linear forwards, fillAnim 3s infinite alternate;
+    animation: atiAnim 1s linear forwards, fillAnim 3s infinite alternate;
+}
+
+section svg {
+    -webkit-animation: toColored .5s linear forwards, fillAnim 3s infinite alternate;
+    -moz-animation: toColored .5s linear forwards, fillAnim 3s infinite alternate;
+    -o-animation: toColored .5s linear forwards, fillAnim 3s infinite alternate;
+    animation: toColored .5s linear forwards, fillAnim 3s infinite alternate;
+}
+
+@-webkit-keyframes toColored {
+    from {
+        fill: transparent
+    }
+    to {
+        fill: rgba(34, 85, 181, 0.6)
+    }
+}
+
+@-webkit-keyframes atiAnim {
+    from {
+        stroke-dashoffset: 800
+    }
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes fillAnim {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(.8)
+    }
+}
+
+div#atiPulse {
+    position: relative;
+    margin: 60px 0 0 0
+}
+
+div#pulse {
+    position: absolute;
+    top: calc(50% - 3.95vw);
+    left: calc(50% - 3.75vw);
+    width: 7.5vw;
+    height: 7.5vw
+}
+
+.pulse {
+    display: block;
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 50%
+}
+
+.pulse.low {
+    background: transparent;
+    animation: atipulselow 3s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes atipulselow {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(56, 108, 206, .5);
+        box-shadow: 0 0 0 0 rgba(56, 108, 206, .5)
+    }
+    50% {
+        -moz-box-shadow: 0 0 0 1vw rgba(56, 108, 206, 0);
+        box-shadow: 0 0 0 1vw rgba(56, 108, 206, 0)
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(56, 108, 206, 0);
+        box-shadow: 0 0 0 0 rgba(56, 108, 206, 0)
+    }
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    margin: 50px 30px 0 30px
+}
+
+.circle img {
+    width: 50px;
+    height: 50px
+}
+
+footer {
+    background-color: rgba(63, 113, 174, 0.55);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-family: "GFSB", sans-serif;
+    font-size: 12.5px;
+    color: white
+}
+
+footer div {
+    padding: 10px
+}
+
+footer div:nth-child(2) {
+    text-align: right
+}
+
+footer div p {
+    padding: 5px
+}
+
+div#sectionNav {
+    text-align: center
+}
+
+div#sectionNav ul li {
+    display: inline-block;
+    padding: 20px
+}
+
+div#sectionNav ul li img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer
+}
+
+div#adminAti,
+div#adminUpdates,
+div#adminBlog{
+    display: none
+}
+
+center{
+    padding: 10px
+}
+
+article{
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: 50px 20px;
+    padding: 10px;
+    text-align: left
+}
+
+article div#articlePart{
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin: 10px
+}
+
+article img{
+    width: 100%;
+    height: 100%
+}
+
+article h1{
+    font-family: "GFSB", sans-serif;
+    font-size: 20px;
+    padding: 0;
+    color: #2762b2;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    padding:  0 0 10px 0;
+    line-height: 1.5em
+}
+
+article div.articleDate{
+    position: absolute;
+    width: 180px;
+    bottom: 0
+}
+
+article div.articleDate img{
+    width: 15px;
+    height: 15px
+}
+
+article div.articleDate p{
+    position: absolute;
+    left: 25px;
+    top: 1.5px;
+    font-family: "GFSB", sans-serif;
+    font-size: 12.5px;
+    color: dimgray
+}
+
+article div#articlePart p.articlePreview{
+    width: 100%;
+    height: 135px;
+    overflow: hidden;
+    position: relative;
+    top: 7.5px;
+    line-height: 1.5em;
+    color: black;
+    font-size: 15px;
+    text-align: justify
+}
+
+article div#articlePart div.articleMore{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(88, 88, 88, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: .5s opacity
+}
+
+article div#articlePart div.articleMore button{
+    position: absolute;
+    top: calc(50% - 22.5px);
+    left: calc(50% - 60px)
+}
+
+article:hover div#articlePart div.articleMore{
+    opacity: 1
+}
+
+div#fullArticle{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    overflow: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed
+}
+
+div#fullArticle div.articleHeader{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 80vh;
+    background: rgba(63, 113, 174, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+div#fullArticle div.articleHeader h1{
+    color: white;
+    font-family: "GFSB", sans-serif;
+    font-size: 25px
+}
+
+div#fullArticle div.articleHeader div.articleTime{
+    position: absolute;
+    width: 180px;
+    bottom: 10px;
+    left: 10px
+}
+
+div#fullArticle div.articleHeader div.articleTime img{
+    width: 15px;
+    height: 15px
+}
+
+div#fullArticle div.articleHeader div.articleTime p{
+    position: absolute;
+    left: 25px;
+    top: 1.5px;
+    font-family: "GFSB", sans-serif;
+    font-size: 12.5px;
+    color: white
+}
+
+div#fullArticle div.articleMain{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.95)
+}
+
+div#fullArticle div.articleMain p.articleShort{
+    font-family: "GFSB", sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: justify
+}
+
+div#fullArticle div.articleMain p.articleLong{
+    font-family: "GFSB", sans-serif;
+    font-size: 17.5px;
+    line-height: 1.5em;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+    text-align: justify
+}
+
+div.photoSection{
+    text-align: center;
+    padding-bottom: 100px;
+    width: 60%;
+    margin: 50px auto 0 auto
+}
+
+div#photoContainer{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15px;
+    display: inline-block;
+    transition: .25s opacity;
+    cursor: pointer
+}
+
+div#photoContainer:hover{
+    opacity: .75
+}
+
+@media screen and (min-width: 950px) {
+    div#personalInfo {
+        display: flex;
+        justify-content: space-between
+    }
+    div#personalInfo div#details {
+        max-height: 300px;
+        overflow: auto;
+        text-align: center;
+        margin: 0 0 0 40px
+    }
+    div#msgsContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0
+    }
+    
+    article{
+    width: 850px;
+    height: auto;
+    position: relative;
+    margin: 50px 20px;
+    padding: 10px;
+    text-align: left
+}
+
+article:nth-child(2n){
+    text-align: right
+}
+
+article:nth-child(2n) div#articlePart:nth-child(2){
+    left: 20px
+}
+
+article div#articlePart{
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    margin: 0 10px
+}
+
+article div#articlePart:nth-child(2){
+    position: absolute
+}
+
+article img{
+    width: 100%;
+    height: 100%
+}
+
+article h1{
+    font-family: "GFSB", sans-serif;
+    font-size: 20px;
+    padding: 0;
+    color: #2762b2;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    padding:  0 0 10px 0;
+    line-height: 1.5em
+}
+
+article div.articleDate{
+    position: absolute;
+    width: 180px;
+    bottom: 0
+}
+
+article div.articleDate img{
+    width: 15px;
+    height: 15px
+}
+
+article div.articleDate p{
+    position: absolute;
+    left: 25px;
+    top: 1.5px;
+    font-family: "GFSB", sans-serif;
+    font-size: 12.5px;
+    color: dimgray
+}
+
+article:nth-child(2n) div.articleDate{
+    right: 0    
+}
+
+article:nth-child(2n) div.articleDate p{
+    right: 25px
+}
+
+article div#articlePart p.articlePreview{
+    width: 100%;
+    height: 135px;
+    overflow: hidden;
+    position: relative;
+    top: 7.5px;
+    line-height: 1.5em;
+    color: black;
+    font-size: 15px
+}
+
+article div#articlePart div.articleMore{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(88, 88, 88, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: .5s opacity
+}
+
+article div#articlePart div.articleMore button{
+    position: absolute;
+    top: calc(50% - 22.5px);
+    left: calc(50% - 60px)
+}
+
+article:hover div#articlePart div.articleMore{
+    opacity: 1
+}
+
+}
+
+@media screen and (min-width: 1400px) {
+    section {
+        width: calc(70% - 20px)
+    }
+}
